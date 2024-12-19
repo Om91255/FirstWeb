@@ -7,12 +7,20 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  scroll-behavior: smooth;
   /* color: #c4cbca; */
+}
+
+body{
+  user-select: none; 
+  -webkit-user-select: none; 
+  -ms-user-select: none; 
 }
 
 main{
   position: relative;
   /* width: 100vw; */
+  border-color: #050c17;
 }
 
 /* for backgroung video */
@@ -37,7 +45,8 @@ nav{
 background-color: #bb3103;
   box-shadow: 0 4px 5px rgb(243, 240, 240);
   /* border: 1px solid green; */
-  z-index: 1000px;
+  /* z-index: 1000px; */
+  z-index: 5;
 }
 nav>figure{
   color: white;
@@ -162,6 +171,7 @@ nav>figure{
   position: absolute;
   top: 300px; 
   left: 100px;
+  /* z-index: 2; */
 }
 .intro>.name-passion{
   font-size: 50px;
@@ -376,14 +386,26 @@ body.popup-active .popup{
   padding-top: 20px;
   color: #bb3103;
 }
-.projects-cards{
-  padding: 85px 0px;
+.projects-cards>h4{
+  padding-bottom: 30px;
+  padding-top: 60px;
+  /* margin-bottom: 20px; */
+  /* height: 400px; */
+  justify-content: space-evenly;
+  gap: 50px;
+  background-color: #050c17;
+
+}
+.main-flipCard{
+
+  /* padding: 85px 0px; */
   display: flex;
   height: 400px;
   justify-content: space-evenly;
   gap: 20px;
   background-color: #050c17;
-/* z-index: -200px; */
+
+
 }
 
 .flip-card {
@@ -461,7 +483,18 @@ transform-style: preserve-3d;
 /* skills-card end */
 
 /* services  start */
-.services{
+.services>h4{
+  /* height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* padding: 20px 0; */
+  background-color: #050c17; 
+  padding-top: 70px;
+
+}
+.main-service{
   height: 300px;
   width: 100%;
   display: flex;
@@ -499,7 +532,7 @@ transform-style: preserve-3d;
 .services-card>h4{
   margin-top: 10px;
   width: 250px;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 900;
   color: #bb3103;
   text-align: center;
@@ -625,10 +658,18 @@ margin-top: 0px;
   .popup{
     /* background-color: rgb(182,181,181); */
     background-color: transparent;
-    top: 200px;
+    top: 170px;
     left: 190px;
     width: 300px;
     /* border: 2px solid #c4cbca; */
+  }
+
+  @keyframes popabt {
+    from{
+      top: -420px;
+    }to{
+      top: 170px;
+    }
   }
 
   
@@ -669,10 +710,18 @@ margin-top: 0px;
   .popup{
     /* background-color: rgb(182,181,181); */
     background-color: transparent;
-    top: 200px;
+    top: 150px;
     left: 75px;
     width: 300px;
     /* border: 2px solid #c4cbca; */
+  }
+
+  @keyframes popabt {
+    from{
+      top: -420px;
+    }to{
+      top: 150px;
+    }
   }
   
 .popup .close-popup{
@@ -835,6 +884,12 @@ margin-top: 0px;
   }
   /* skill-cards */
   .projects-cards{
+    height: 1000px;
+    width: 425px;
+    flex-direction: column;
+    align-items: center; 
+  }
+  .main-flipCard{
     height: 800px;
     width: 425px;
     flex-direction: column;
@@ -851,7 +906,16 @@ margin-top: 0px;
 
   /* services */
   
-  .services{
+  /* .services{
+    height: 800px;
+    width: 425px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  } */
+
+  .main-service{
+    flex-direction: column;
     height: 800px;
     width: 425px;
     flex-direction: column;
@@ -868,7 +932,7 @@ margin-top: 0px;
   .contact{
     flex-direction: column;
     align-items: center;
-width: 425px;
+    width: 425px;
 
   }
   .contact-img>img{

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>om kumar</title>
-  <link rel="icon" href="./download.webp">
+  <link rel="icon" href=".//Img&Doc/download.webp">
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -14,39 +14,41 @@
 
 <body>
 
+  <nav>
+    <div class="logo">OM</div>
+
+    <ul class="menu">
+      <li><a href="#home" class="menu-btn">Home</a></li>
+      <li><a href="#projects" class="menu-btn">Projects</a></li>
+      <li><a href="#services" class="menu-btn">Services</a></li>
+      <li><a href="#contact" class="menu-btn">Contact</a></li>
+    </ul>
+
+    <div class="menupopup" >
+      <div class="menu-icon"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></div>
+
+      <ul class="menu-open">
+        <li><a href="#home" class="menu-btn">Home</a></li>
+        <li><a href="#projects" class="menu-btn">projects</a></li>
+        <li><a href="#services" class="menu-btn">Services</a></li>
+        <li><a href="#contact" class="menu-btn">Contact</a></li>
+        <div class="close-menu"><img src="https://anuragsinghbam.com/images/x.svg" alt=""></div>
+      </ul>
+    </div>
+
+  </nav>
+
   <main id="home">
 
     <!-- back-ground vd -->
     <figure>
       <video playsinline autoplay muted loop>
-        <source src="./3129671-uhd_3840_2160_30fps.mp4" type="video/mp4">
+        <source src=".//Img&Doc/3129671-uhd_3840_2160_30fps.mp4" type="video/mp4">
       </video>
     </figure>
 
     <!-- nav -->
-    <nav>
-      <div class="logo">OM</div>
-
-      <ul class="menu">
-        <li><a href="#home" class="menu-btn">Home</a></li>
-        <li><a href="#projects" class="menu-btn">Projects</a></li>
-        <li><a href="#services" class="menu-btn">Services</a></li>
-        <li><a href="#contact" class="menu-btn">Contact</a></li>
-      </ul>
-
-      <div class="menupopup">
-        <div class="menu-icon"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></div>
-
-        <ul class="menu-open">
-          <li><a href="#home" class="menu-btn">Home</a></li>
-          <li><a href="#projects" class="menu-btn">projects</a></li>
-          <li><a href="#services" class="menu-btn">Services</a></li>
-          <li><a href="#contact" class="menu-btn">Contact</a></li>
-          <div class="close-menu"><img src="https://anuragsinghbam.com/images/x.svg" alt=""></div>
-        </ul>
-      </div>
-
-    </nav>
+  
 
     <!-- intro auto text typing -->
     <section class="intro" id="welcome">
@@ -93,7 +95,7 @@
 
         <span class="download-cv"><a href="./OM new resume.pdf" attributes-list download="om cv"> Download cv
           </a></span>
-        <div class="close-popup"><img src="https://anuragsinghbam.com/images/x.svg" alt=""></i></div>
+        <div class="close-popup"><i class="fa-solid fa-xmark" style="color: #fcfcfd;"></i></div>
       </div>
 
 
@@ -111,82 +113,86 @@
     </section>
 
     <!-- skills-card -->
-    <h4 id="projects">My Projects</h4>
-    <section class="projects-cards">
+      
+      <section class="projects-cards" id="projects">
+        <h4 >My Projects</h4>
+        <div class="main-flipCard">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <p><i class="fa-brands fa-html5" style="color: #bb3103;"></i></p>
+                <p class="tittle">HTML</p>
+              </div>
+              <div class="flip-card-back">
+                <video playsinline autoplay muted loop > 
+                  <source src="./video-tv-in-0819.m4v" type="video/mp4">
+                </video>
 
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <p><i class="fa-brands fa-html5" style="color: #bb3103;"></i></p>
-            <p class="tittle">HTML</p>
+              </div>
+            </div>
           </div>
-          <div class="flip-card-back">
-            <video playsinline autoplay muted loop > 
-              <source src="./video-tv-in-0819.m4v" type="video/mp4">
-            </video>
 
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <p><i class="fa-brands fa-css3-alt" style="color: #bb3103;"></i></p>
+                <p class="tittle">CSS</p>
+              </div>
+              <div class="flip-card-back">
+                <video playsinline autoplay muted loop > 
+                  <source src="./video-tv-in-0819.m4v" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <p><i class="fa-brands fa-square-js" style="color: #bb3103;"></i></p>
+                <p class="tittle">JS</p>
+              </div>
+              <div class="flip-card-back">
+                <video playsinline autoplay muted loop > 
+                  <source src="./video-tv-in-0819.m4v" type="video/mp4">
+                </video>
+              </div>
+            </div>
           </div>
         </div>
+
+      </section>
+
+    
+    <section class="services" id="services">
+      <h4 >My Services</h4>
+
+      <div class="main-service">
+
+        <span class="services-card">
+          <span class="services-img"><span class="img"><img src=".//Img&Doc/icons8-web-design-64.png" alt=""></span></span>
+
+          <h4>Web Designer</h4>
+        </span>
+
+        <span class="services-card">
+          <span class="services-img"><img src=".//Img&Doc/icons8-web-developer-96.png" alt=""></span>
+          <h4>Web Developer</h4>
+        </span>
+
+        <span class="services-card">
+          <span class="services-img"><img src=".//Img&Doc/icons8-web-developer-78.png" alt=""></span>
+          <h4>Software Developer</h4>
+        </span>
+
       </div>
-
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <p><i class="fa-brands fa-css3-alt" style="color: #bb3103;"></i></p>
-            <p class="tittle">CSS</p>
-          </div>
-          <div class="flip-card-back">
-            <video playsinline autoplay muted loop > 
-              <source src="./video-tv-in-0819.m4v" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <p><i class="fa-brands fa-square-js" style="color: #bb3103;"></i></p>
-            <p class="tittle">JS</p>
-          </div>
-          <div class="flip-card-back">
-            <video playsinline autoplay muted loop > 
-              <source src="./video-tv-in-0819.m4v" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-
-
-    </section>
-
-    <h4 id="services">My Services</h4>
-    <section class="services">
-
-
-      <span class="services-card">
-        <span class="services-img"><span class="img"><img src="./icons8-web-design-64.png" alt=""></span></span>
-
-        <h4>Web Designer</h4>
-      </span>
-
-      <span class="services-card">
-        <span class="services-img"><img src="./icons8-web-developer-96.png" alt=""></span>
-        <h4>Web Developer</h4>
-      </span>
-
-      <span class="services-card">
-        <span class="services-img"><img src="./icons8-web-developer-78.png" alt=""></span>
-        <h4>Software Developer</h4>
-      </span>
-
 
     </section>
 
     <section class="contact" id="contact">
 
       <span class="contact-img">
-        <img src="./contact-me.svg" alt="">
+        <img src=".//Img&Doc/contact-me.svg" alt="">
       </span>
 
       <span class="contact-from">

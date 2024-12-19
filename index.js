@@ -1,4 +1,6 @@
-
+document.addEventListener('contextmenu', (event) => {
+  event.preventDefault();
+});
 
 // for intro js code starte
 
@@ -46,17 +48,17 @@ menuBtn.addEventListener("click", function () {
   document.body.classList.add("menu-active")
 })
 
-menuBtn.addEventListener("click", function () {
-  document.body.classList.add("nonMenuBtn")
-})
+// menuBtn.addEventListener("click", function () {
+//   document.body.classList.add("nonMenuBtn")
+// })
 
 closeMenu.addEventListener("click", function () {
   document.body.classList.remove("menu-active")
 })
 
-closeMenu.addEventListener("click", function () {
-  document.body.classList.remove("nonMenuBtn")
-})
+// closeMenu.addEventListener("click", function () {
+//   document.body.classList.remove("nonMenuBtn")
+// })
 
 
 
