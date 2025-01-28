@@ -200,55 +200,22 @@ nav>figure{
 
 /* about btn */
 button {
-  width: 10em;
+  width: 160px;
   position: absolute;
   top: 420px;
   left: 110px;
-  height: 3.5em;
-  /* border: 3px ridge #149CEA; */
+  height: 56px;
   border: 3px ridge #bb3103;
   outline: none;
   background-color: transparent;
   color: white;
-  /* transition: 1s; */
-  border-radius: 0.3em;
+  border-radius: 4.8px;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   
 }
-
-button::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 3%;
-  width: 95%;
-  height: 40%;
-  /* background-color: #212121; */
-  background-color: transparent;
-  transition: 0.5s;
-  transform-origin: center;
-}
-
-button::before {
-  content: "";
-  transform-origin: center;
-  position: absolute;
-  top: 80%;
-  left: 3%;
-  width: 95%;
-  height: 40%;
-  /* background-color: #212121; */
-  transition: 0.5s;
-}
-
-button:hover::before, button:hover::after {
-  transform: scale(0)
-}
-
 button:hover {
-  /* box-shadow: inset 0px 0px 25px #1479EA; */
   box-shadow: inset 0px 0px 25px #bb3103;
 }
 /* about btn end */
@@ -257,9 +224,7 @@ button:hover {
 
 /* inside abot btn */
 body.popup-active .popup{
-  display: block;
-  /* transform: translate(-50%, -45%) scale(0); */
-  
+  display: block; 
 }
 
 
@@ -270,7 +235,6 @@ body.popup-active .popup{
   top: 200px;
   left: 400px;
   display: flex;
-  /* border: 2px solid white; */
   border-radius: 1rem;
   display: none;
   animation: popabt;
@@ -307,14 +271,9 @@ body.popup-active .popup{
 }
 
 .top-skills{
-  /* background-color: rgb(182, 181, 181); */
   color: #c4cbca;
   margin-top: 0px;
   padding: 10px;
-  /* height: 70px; */
-  /* width: 600px; */
-  /* position: absolute;
-  top: 130px; */
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -350,8 +309,6 @@ body.popup-active .popup{
     top: -20px;
     right: -25px;
     cursor: pointer;
-    /* display: none; */
-    /* background-color: rgb(10, 10, 10); */
     border-radius: 50%;
 }
 /* inside about btn */
@@ -363,7 +320,6 @@ body.popup-active .popup{
   position: absolute;
   top: 270px;
   right: 10px;
-  /* background-color: blue; */
   height: 200px;
   width: 44px;
   display: flex;
@@ -389,30 +345,23 @@ body.popup-active .popup{
 .projects-cards>h4{
   padding-bottom: 30px;
   padding-top: 60px;
-  /* margin-bottom: 20px; */
-  /* height: 400px; */
   justify-content: space-evenly;
   gap: 50px;
   background-color: #050c17;
 
 }
 .main-flipCard{
-
-  /* padding: 85px 0px; */
   display: flex;
   height: 400px;
   justify-content: space-evenly;
   gap: 20px;
   background-color: #050c17;
-
-
 }
 
 .flip-card {
   background-color: transparent;
   width: 390px;
   height: 254px;
-/* perspective: 1000px; */
   font-family: sans-serif;
 }
 
@@ -484,12 +433,6 @@ transform-style: preserve-3d;
 
 /* services  start */
 .services>h4{
-  /* height: 300px;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  /* padding: 20px 0; */
   background-color: #050c17; 
   padding-top: 70px;
 
@@ -500,7 +443,6 @@ transform-style: preserve-3d;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  /* padding: 20px 0; */
   background-color: #050c17;
 }
 
@@ -517,7 +459,6 @@ transform-style: preserve-3d;
 }
 
 .services-img{
-  /* padding: 20px; */
   width: 100px;
   height: 100px;
   margin: auto;
@@ -559,16 +500,13 @@ transform-style: preserve-3d;
   display: flex;
   flex-direction: column;
   justify-content: center;
-/* border: 1px solid #bb3103; */
   gap: 2px;
   padding: 10px;
 }
 .contact-font{
-/* width: 20px; */
   color: #c4cbca;
   font-size: 20px;
   display: inline;
-/* border: 1px solid green; */
 }
 .form-group>label{
   text-transform: capitalize;
@@ -592,7 +530,6 @@ transform-style: preserve-3d;
   font-family: sans-serif;
   border: 2px solid #bb3103;
   color: #bb3103;
-/* background-color: transparent; */
   outline: none;
   border-radius: 5px;
   border-color: transparent;
@@ -605,8 +542,7 @@ transform-style: preserve-3d;
 
 .message-group{
   height: 50px;
-/* font-size: 20px; */
-width: 370px;
+  width: 370px;
   cursor: pointer;
   text-align: center;
   background-color: #bb3103;
@@ -618,7 +554,6 @@ width: 370px;
 .message-send{
 
 font-size: 20px;
-/* border: 1px solid green; */
 font-weight: 700;
 color: #c4cbca;
 margin-top: 0px;
@@ -642,9 +577,7 @@ margin-top: 0px;
 /* copy rights end*/
 
 @media (max-width: 1024px){
-  /* video{
-    height: 130vh;
-  } */
+
   .intro{
     top: 200px;
     left: 50px;
@@ -656,12 +589,10 @@ margin-top: 0px;
   }
 
   .popup{
-    /* background-color: rgb(182,181,181); */
     background-color: transparent;
     top: 170px;
     left: 190px;
     width: 300px;
-    /* border: 2px solid #c4cbca; */
   }
 
   @keyframes popabt {
@@ -688,11 +619,6 @@ margin-top: 0px;
 
 
 @media (max-width: 768px){
-  /* video{
-    object-fit: cover;
-    width: 481px;
-    height: 00px;
-  } */
    nav{
     width: 768px;
    }
@@ -708,12 +634,10 @@ margin-top: 0px;
   }
 
   .popup{
-    /* background-color: rgb(182,181,181); */
     background-color: transparent;
     top: 150px;
     left: 75px;
     width: 300px;
-    /* border: 2px solid #c4cbca; */
   }
 
   @keyframes popabt {
@@ -732,7 +656,6 @@ margin-top: 0px;
   .social-media{
     top: 230px;
     left: 710px;
-    /* flex-direction: row; */
     width: 20px;
   }
 
@@ -805,9 +728,6 @@ margin-top: 0px;
   body.nonMenuBtn .menupopup>.menu-icon{
     display: none;
   }
-  /* body.onMenuBtn .menupopup>.menu-icon{
-    display: block;
-  } */
   body.menu-active .menu-open{
     display: block;
   }
@@ -841,7 +761,6 @@ margin-top: 0px;
 
   /* popup start */
   .popup{
-    /* background-color: rgb(182,181,181); */
     background-color: transparent;
     top: 200px;
     left: 55px;
@@ -870,7 +789,6 @@ margin-top: 0px;
   .social-media{
     top: 230px;
     left: 387px;
-    /* flex-direction: row; */
     width: 20px;
   }
   .social-media>a{
@@ -905,14 +823,6 @@ margin-top: 0px;
   }
 
   /* services */
-  
-  /* .services{
-    height: 800px;
-    width: 425px;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  } */
 
   .main-service{
     flex-direction: column;

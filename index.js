@@ -48,21 +48,10 @@ menuBtn.addEventListener("click", function () {
   document.body.classList.add("menu-active")
 })
 
-// menuBtn.addEventListener("click", function () {
-//   document.body.classList.add("nonMenuBtn")
-// })
 
 closeMenu.addEventListener("click", function () {
   document.body.classList.remove("menu-active")
 })
-
-// closeMenu.addEventListener("click", function () {
-//   document.body.classList.remove("nonMenuBtn")
-// })
-
-
-
-
 
 
 // for about btn
@@ -86,10 +75,6 @@ let username = document.querySelector("#name")
 let useremail = document.querySelector("#email")
 let usersmessage = document.querySelector("#message")
 let messagebtn = document.querySelector("#messagebtn")
-// console.log(username);
-// console.log(useremail);
-// console.log(usersmessage);
-// console.log(messagebtn);
 
 let messageStore = [];
 
@@ -110,10 +95,6 @@ messagebtn.addEventListener("click", (e) => {
       username.value = ""
       useremail.value = ""
       usersmessage.value = ""
-
-
-
-
     } else {
       alert("empty input field")
     }
