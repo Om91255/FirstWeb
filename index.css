@@ -426,7 +426,7 @@ transform-style: preserve-3d;
   transform: rotateY(180deg);
 }
 .flip-card-back>video{
-  object-fit: cover;
+  object-fit: fill;
   border-radius: 20px;
 }
 /* skills-card end */

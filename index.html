@@ -116,16 +116,18 @@
       
       <section class="projects-cards" id="projects">
         <h4 >My Projects</h4>
+
         <div class="main-flipCard">
+          
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <p><i class="fa-brands fa-html5" style="color: #bb3103;"></i></p>
-                <p class="tittle">HTML</p>
+                <p class="tittle">Portfolio</p>
               </div>
-              <div class="flip-card-back">
+              <div class="flip-card-back" onclick="location.href='https://om91255.github.io/FirstWeb/'">
                 <video playsinline autoplay muted loop > 
-                  <source src="./video-tv-in-0819.m4v" type="video/mp4">
+                  <source src="./Video/Portfolio.mp4" type="video/mp4">
                 </video>
 
               </div>
@@ -136,11 +138,11 @@
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <p><i class="fa-brands fa-css3-alt" style="color: #bb3103;"></i></p>
-                <p class="tittle">CSS</p>
+                <p class="tittle">Quiz-Master</p>
               </div>
-              <div class="flip-card-back">
+              <div class="flip-card-back" onclick="location.href='https://om91255.github.io/Quiz-Master/'">
                 <video playsinline autoplay muted loop > 
-                  <source src="./video-tv-in-0819.m4v" type="video/mp4">
+                  <source src="./Video/Quiz-master.mp4" type="video/mp4">
                 </video>
               </div>
             </div>
@@ -150,9 +152,9 @@
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <p><i class="fa-brands fa-square-js" style="color: #bb3103;"></i></p>
-                <p class="tittle">JS</p>
+                <p class="tittle">SVK Movies</p>
               </div>
-              <div class="flip-card-back">
+              <div class="flip-card-back" onclick="location.href='#'">
                 <video playsinline autoplay muted loop > 
                   <source src="./video-tv-in-0819.m4v" type="video/mp4">
                 </video>
@@ -196,26 +198,27 @@
       </span>
 
       <span class="contact-from">
-        <form action="">
+        <form  action="https://formspree.io/f/mldgbvbo"
+        method="POST">
           <div class="form-group">
             <span class="contact-font"><i class="fa-regular fa-user"></i>
               <label for="name">Name</label>
             </span>
-            <input type="text" id="name">
+            <input type="text" id="name" name="userName" autocomplete="off">
           </div>
 
           <div class="form-group">
             <span class="contact-font"><i class="fa-regular fa-envelope"></i>
               <label for="email">Email</label>
             </span>
-            <input type="email" id="email">
+            <input type="email" id="email" name="email" autocomplete="off">
           </div>
 
         <div class="form-group">
             <span class="contact-font"><i class="fa-regular fa-message"></i>
               <label for="message">Message</label>
             </span>
-            <textarea rows="4" cols="1" id="message"></textarea>
+            <textarea rows="4" cols="1" id="message" name="message" minlength="10"></textarea>
           </div>
           <div class="message-btn" id="messagebtn">
             <div class="message-group">
